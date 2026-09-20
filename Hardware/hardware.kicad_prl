@@ -18,6 +18,7 @@
     "prototype_zone_fills": false,
     "selection_filter": {
       "dimensions": true,
+      "footprints": true,
       "graphics": true,
       "keepouts": true,
       "lockedItems": false,
