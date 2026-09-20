@@ -8,7 +8,7 @@
     out (CW), a
     
     ; Inicializar el Stack Pointer
-    ld SP, ffffh
+    ld SP, 0ffffh
     
     ; 1. Mostrar mensaje inicial para solicitar el nombre
     ld hl, text_ingrese
@@ -89,7 +89,7 @@ almacenar_en_sram:
 ; Segmento de Datos (Ubicado en la SRAM)
 ; ==========================================
     .org 0f800h
-text_ingrese:   .db "Ingrese nombre y apellidos: &"
+text_ingrese:   .db "Ingrese nombre y apellidos:Israel Juarez Contreras &"
 text_error:     .db " Error: Solo letras y espacios &"
 text_resultado: .db " Total de letras (sin espacios): &"
 
