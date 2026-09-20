@@ -15,6 +15,7 @@
     call desp_text
 
     ; Inicializar registros para el conteo de letras
+    ld b, 0           ; B funcionará como nuestro contador de letras
 
 main_loop:
     ; 2. Leer tecla o carácter del puerto de entrada
@@ -87,7 +88,7 @@ almacenar_en_sram:
 ; ==========================================
 ; Segmento de Datos (Ubicado en la SRAM)
 ; ==========================================
-    .org f800h
+    .org 0f800h
 text_ingrese:   .db "Ingrese nombre y apellidos: &"
 text_error:     .db " Error: Solo letras y espacios &"
 text_resultado: .db " Total de letras (sin espacios): &"
